@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mystery+Quest&family=Vibur&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <section class="first-div">
+            <h1>* * To Do List * * </h1>
+            <div class="ajout-tache">
+                <input type="text" id="champ">
+                <div class="ajout" id="ajout"></div>
+            </div>
+            <div class="taches">
+                <div class="all" id="all"></div>
+                <div class="todo" id="todo"></div>
+                <div class="finish" id="finish"></div>
+            </div>
+
+        </section>
+        <section class="listing">
+            <div class="valeur-champ" id="valeurChamp"></div>
+            <!-- Modal de confirmation -->
+            <div class="modal-conf" id="confirmationModal">
+                <p>Voulez-vous vraiment supprimer ?</p><br>
+                <button id="confirmDelete">Oui</button>
+                <button id="cancelDelete">Non</button>
+            </div>
+            <!-- Overlay pour le modal -->
+            <div class="modal-overlay" id="modalOverlay">
+            </div>
+            <div class="div-delet">
+                <div id="deletSelec"></div>
+                <div id="deletAll"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <script src="./js/main.js"></script>
+    </footer>
+
+</body>
+
+</html>
